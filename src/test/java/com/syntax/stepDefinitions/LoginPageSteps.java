@@ -2,16 +2,18 @@ package com.syntax.stepDefinitions;
 
 import org.junit.Assert;
 import com.syntax.pages.LoginPage;
+import com.syntax.utils.BaseClass;
 import com.syntax.utils.CommonMethods;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginPageSteps {
+public class LoginPageSteps extends BaseClass {
 
 	LoginPage login;
 
+	
 	@Given("^OrangeHRM logo is displayed$")
 	public void orangehrm_logo_is_displayed() {
 		login = new LoginPage();
